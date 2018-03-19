@@ -1,0 +1,77 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 10vh;
+    margin: none;
+    
+}
+
+.topnav{
+    background-color: antiquewhite;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: serif;
+
+}
+
+.topnav a:hover{
+    background-color: grey;
+    color: black;
+}
+.bottomnav{
+    background-color: antiquewhite;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    font-family: serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.head{
+     background-color: rgba(239,218,171,.75);
+    width: 50%; 
+    margin-top: 300px;
+}
+.f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p{
+    margin-top: 300px;
+    background-color: rgba(239,218,171,.75);
+    font-size: 30px;
+}
+
+.logo{
+    height: 20vh;
+    flex: left;
+    margin-right: 0px;
+    margin-left: -30px;
+    margin-top: -55px
+}
+.img{
+    margin-left: 550px;
+    background-color: antiquewhite;
+    
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/IMG_0553.jpg);
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.color{
+    color: antiquewhite;
+}
