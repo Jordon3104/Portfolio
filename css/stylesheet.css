@@ -4,32 +4,50 @@
     flex-wrap: none;
     justify-content: space-between;
     align-content: space-between;
-    height: 10vh;
-    margin: none;
+    margin: 0;
     
 }
 
 .topnav{
-    background-color: antiquewhite;
-    overflow: hidden;
-    text-decoration: none;
-    text-align: center;
     font-size: 25px;
     font-family: serif;
-
+    background-color: antiquewhite;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
 }
-
+header{
+    height: 10px;
+}
+a{
+    color: rgb(167,149,123);
+}
 .topnav a:hover{
-    background-color: grey;
-    color: black;
+    background-color: rgb(167,149,123);
+    color: rgb(214,200,187);
 }
 .bottomnav{
+    font-size: 25px;
+    font-family: serif;
     background-color: antiquewhite;
     overflow: hidden;
     text-decoration: none;
     text-align: center;
-    font-size: 17px;
-    font-family: serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-content: stretch;
+   
+}
+
+.bottomnav a:hover{
+    background-color: rgb(167,149,123);
+    color: rgb(214,200,187);
+    
 }
 
 h1{
@@ -37,9 +55,10 @@ h1{
     font-size: 40px;
 }
 .head{
-     background-color: rgba(239,218,171,.75);
+    background-color: rgba(239,218,171,.75);
     width: 50%; 
     margin-top: 300px;
+    margin-bottom: 300px;
 }
 .f{
     display: flex;
@@ -47,22 +66,27 @@ h1{
     justify-content: center;
 }
 .p{
-    margin-top: 300px;
-    background-color: rgba(239,218,171,.75);
+    background-color: rgb(239,218,171);
     font-size: 30px;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .logo{
-    height: 20vh;
-    flex: left;
-    margin-right: 0px;
-    margin-left: -30px;
-    margin-top: -55px
+    height: 200px;
+    margin-top: -60px;
 }
 .img{
-    margin-left: 550px;
-    background-color: antiquewhite;
-    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: row;
+    background-color: rgb(239,218,171);
 }
 body {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/IMG_0553.jpg);
@@ -73,5 +97,11 @@ body {
     
 }
 .color{
-    color: antiquewhite;
+ background-color: rgb(239,218,171);
+
+}
+
+article{
+    background-color: rgb(239,218,171);
+    height: 100%;
 }
