@@ -84,7 +84,7 @@ h1{
     align-items: stretch;
     align-content: stretch;
     justify-content: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     
 }
@@ -125,4 +125,12 @@ body {
 article{
     background-color: rgb(239,218,171);
     height: 100%;
+}
+.r{
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.mt{
+    margin-top: 130px;
 }
