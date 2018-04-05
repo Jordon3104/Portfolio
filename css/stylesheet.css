@@ -136,27 +136,35 @@ body {
 }
 
 /* Card Styling */
+.card-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+}
+
 .card1{
     display: flex;
-    justify-content: flex-start;
-    margin-left: 50px;
-    position: relative;
     background-image: url(../images/code.PNG);
     width: 20%;
     height: 500px;
 }
 
 .card-text{
-    position: absolute;
-    color: rgb(239,218,171);
-    background-color: rgba(0,0,0,0.2);
-    padding-left: 110px;
-    padding-right: 110px;
+    display: flex;
+    justify-content:center;
     align-content: center;
     font-size: 25px;
+    color: rgb(239,218,171);
 }
 
-.card2{}
+.card2{ 
+    display: flex;
+    background-image: url(../images/letter.jpg);
+    width: 20%;
+    height: 500px;
+}
+
 
 
 .card3{}
@@ -178,11 +186,7 @@ article{
 .mt{
     margin-top: 130px;
 }
-.mt2{
-    margin-top: 200px;
-    margin-bottom: 180px;
-    font-size: 12px;
-}
+
 
 /* Slideshow Styling*/
 
