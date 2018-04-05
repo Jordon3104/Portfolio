@@ -161,7 +161,6 @@ article{
     position: relative;
     align-content: center;
     margin: auto;
-    background-color: rgb(239,218,171);
 }
 
 
@@ -174,7 +173,6 @@ article{
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
   color: white;
   font-weight: bold;
