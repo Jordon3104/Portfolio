@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -23,15 +24,54 @@
             <h1>Photoshop</h1>
         </div>
     </div>
-    <p>Here is some of my photoshop projects.</p>
-    <div class="flex-container">
-        <div class="img">
-           <img src="images/LadyinHoth.jpg" alt="A lady in Hoth">
-            <img src="images/jordon-selway-black-white.jpg" alt="">
-            <img src="images/jordon-selway-layer-styles.jpg" alt="">
-            <img src="images/jordon-selway-posterize.jpg" alt="">
+<br><br>
+  <div class="color">
+
+        <div class="slideshow">
+
+
+            <div class="slide">
+                <div class="number">1/4</div>
+                <img src="images/jordon-selway-layer-styles.jpg" alt="An image a made to test image styles and layers in photoshop" style="width:100%">
+                <div class="caption color">This is my Career Project page that I made. We had to use html to make it, it was one of my first projects.</div>
+            </div>
+
+            <div class="slide">
+                <div class="number">2/4</div>
+                <img src="images/jordon-selway-black-white.png" alt="An image I made testing different color styles in photoshop" style="width: 100%">
+                <div class="caption color">An image I made testing different color styles in photoshop.</div>
+            </div>
+
+            <div class="slide">
+                <div class="number">3/4</div>
+                <img src="images/jordon-selway-posterize.png" alt="An image I made in photoshop testing posterization" style="width: 100%">
+                <div class="caption color">An image I made in photoshop testing posterization.</div>
+            </div>
+
+            <div class="slide">
+                <div class="number">3/4</div>
+                <img src="images/LadyinHoth.jpg" alt="A funny image I made in photoshop of a random lady in the middle of a battle in Hoth from Star-Wars" style="width: 100%">
+                <div class="caption color">A funny image I made in photoshop of a random lady in the middle of a battle in Hoth from Star-Wars.</div>
+            </div>
+            <!-- Buttons -->
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
+    <br>
+
+    <!-- Dots -->
+
+    <div style="text-align: center">
+        <span class="point" onclick="currentSlide(1)"></span>
+        <span class="point" onclick="currentSlide(2)"></span>
+        <span class="point" onclick="currentSlide(3)"></span>
+        <span class="point" onclick="currentSlide(4)"></span>
+    </div>
+
+   
     <footer class="bottomnav">
         <a href="index.html">Home</a>
         <a href="aboutme.html">About Me</a>
@@ -39,5 +79,6 @@
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
     </footer>
+<script src="javascript/javascript.js"></script>
 </body>
 </html>
