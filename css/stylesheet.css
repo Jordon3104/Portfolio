@@ -1,23 +1,54 @@
+/* Flexes */
 .flex-container{
     display: flex;
     flex-direction: row;
     flex-wrap: none;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: space-between;
     margin: 0;
-    
+    font: 30px;
 }
 
+.about{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.letter{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.letter2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: stretch;
+}
+.contact a:hover{
+    background-color: rgba(0,0,0,0.5);
+}
 /* Top Nav Bar */
 .topnav{
     font-size: 25px;
     font-family: serif;
     background-color: antiquewhite;
+    overflow: hidden;
     text-decoration: none;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: stretch;
     height: 10vh;
 }
 header{
@@ -70,15 +101,10 @@ h1{
 
 /* Paragraph Styling */
 .p{
-    background-color: rgb(239,218,171);
+    display: flex;
     font-size: 30px;
     margin-left: 30px;
-    display: flex;
-    align-items: stretch;
-    align-content: stretch;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
+
 }
 .p2{
     background-color: rgb(239,218,171);
@@ -102,10 +128,6 @@ h1{
 /* Image Styling */
 .img{
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    align-content: center;
-    flex-direction: row;
     background-color: rgb(239,218,171);
 }
 .img2{
@@ -214,6 +236,9 @@ article{
     margin-top: 130px;
 }
 
+.font{
+    font-size: 30px;
+}
 
 /* Slideshow Styling*/
 
@@ -284,3 +309,105 @@ article{
 .active, .point:hover{
     background-color: rgb(167,149,123);
 }
+
+
+
+@media screen and (max-width: 900px){
+
+    .topnav{
+    font-size: 25px;
+    font-family: serif;
+    background-color: antiquewhite;
+    text-decoration: none;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch; 
+    
+} 
+    
+    .logo{
+        display: none;
+    }
+    
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    }
+    
+    .p{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    width: 103.6%;
+    }
+    
+    .img {
+    display: flex;
+    background-color: rgb(239,218,171);
+    width: 100%
+}
+    
+    .card-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+}
+
+
+.card-text{
+    display: flex;
+    width: 380px;
+    font-size: 25px;
+    color: rgb(239,218,171);
+}
+.card1{
+    display: flex;
+    background-image: url(../images/code.PNG);
+    width: 50%;
+    height: 500px;
+}
+
+.card2{ 
+    display: flex;
+    background-image: url(../images/letter.jpg);
+    width: 50%;
+    height: 500px;
+}
+
+
+
+.card3{ 
+    display: flex;
+    background-image: url(../images/Photoshop.jpg);
+    width: 50%;
+    height: 500px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    }
+  
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+}
+    
+}
+
